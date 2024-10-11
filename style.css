@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: Tahoma, sans-serif;
+    
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #1e1e1e;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    animation: opacity 1s ease-in-out;
+}
+
+.menu {
+    width: 40%;
+    margin-left: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3em;
+    text-decoration: none;
+    
+}
+
+.menu > a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom:-5px;
+        left:0;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        transform: scaleX(0);
+        transition: 0.3s transform ease-in-out;
+    }
+
+    &:hover {
+        &:after {
+            transform: scaleX(1);
+        }
+    }
+    
+}
+
+section {
+    font-weight:lighter;
+    width: 60%;
+    margin-left: 20%;
+    /*background-color: #4b4a4a;*/
+    height: 100%;
+    padding-top: 20rem;
+    color: white;
+}
+
+.double-presentation {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    animation: opacityUp 1s ease;
+}
+
+.info {
+    width: 50%;
+    padding: 2em 0;
+    line-height: 1.5;
+    min-width: 300px;
+}
+
+.photo {
+    width: 30%;
+    margin-left: 20%;
+    min-width: 200px;
+}
+
+.barre {
+    width: 90%;
+    margin: 50px 5%;
+    height: 1px;
+    background:  #4e4e4e;
+}
+
+.texte1 {
+    text-align: center; 
+    font-size:1.2em;
+    animation: opacityUp 1s;
+}
+
+.competence {
+    width: 100%;
+    height: 100%;
+    border: solid 1.5px;
+    border-color: #4e4e4e;
+    border-radius: 10px;
+    display: flex;
+    margin: 50px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: opacityUp 1s ease;
+}
+
+.langages {
+    height: 100%;
+    width: 60%;
+    min-width: 350px;
+    margin: 2%;
+}
+
+.img-langages {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .skills {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.intermediaire {
+    margin-top: 20px;
+    width: 12%;
+    color:transparent;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.intermediaire:hover {background-color: rgb(240, 211, 46);}
+
+.debutant {
+    margin-top: 20px;
+    width: 12%;
+    color:transparent;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.s {width:30%;}
+
+.debutant:hover {background-color: rgb(114, 240, 46);}
+
+
+.software {
+    text-align: right;
+    min-width: 150px;
+    width: 25%;
+    margin: 2% 2% 2% 9%;
+}
+
+.img-software {
+    display: flex;
+    justify-content: space-between;
+}
+
+.double-parcours {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.double-timeline {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.scolaire {
+    min-width: 300px;
+    width: 50%; 
+}
+ .pro {
+    min-width: 300px;
+    width: 50%; 
+    text-align: right;
+     align-items:right;
+}
+
+.container {
+    margin-top: 40px;
+    height: 200px;
+    width: 10px;
+    background: linear-gradient(to top, #949494 90% , #1e1e1e);
+}
+
+.boule {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #949494;
+    margin: -15px 0 0 -10px;
+    box-shadow: none;
+}
+
+.sup {
+    margin-top: 50px;
+}
+
+.texte-timeline {
+    width: fit-content;
+    margin : 25px 25px;
+    line-height: 1.5;
+}
+
+.texte-timeline > p {
+    margin-bottom: 30px;
+}
+
+.portfolio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.info-projet {
+    margin-top: 30px;
+    min-width: 300px;
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    font-family: 'Courier New', monospace;
+    position: relative;
+    color: black;
+    
+}
+
+.projet {
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    
+}
+
+.projet:hover {
+    opacity: 0;
+}
+
+.un {background: url(images/site-papa.png); background-size: cover;}
+.deux {background: url(images/site-wassem.png); background-size: cover;}
+.trois {background: url(images/site-papa.png); background-size: cover;}
+
+
+.contact {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0 0px 20%;
+}
+
+.cont {
+    width: 120px;
+    height: 120px;
+    margin-bottom : 300px;
+    transition: 0.3s;
+}
+
+.insta {background: url(images/contact/instagram-noir.svg); background-size: cover;}
+.insta:hover {background: url(images/contact/instagram-normal.svg); background-size: cover;}
+.git {background: url(images/contact/github-noir.svg);background-size: cover;}
+.git:hover {background: url(images/contact/github-normal.svg); background-size: cover;}
+.mail {background: url(images/contact//mail-svgrepo-com.svg);background-size: cover;}
+.mail:hover {background: url(images/contact/mail-normal.png); background-size: cover;}
+.tel {background: url(images/contact/tel_noir.png);background-size: cover;}
+.tel:hover {background: url(images/contact/tel_vert.png); background-size: cover;}
+
+
+/*ANIMATION------------------------------------------------------------------------------------------------------*/
+
+@keyframes opacity {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+@keyframes opacity0 {
+    0% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes opacityUp {
+    0%{opacity: 0; transform: translateY(10%);}
+    100%{opacity: 1;transform: translateY(0%);}
+}
+
+
+@media screen and (max-width: 1350px) {
+    section{width: 80%; margin-left:10%;}
+    .intermediaire {font-size: 0.9em;}
+}
+
+@media screen and (max-width: 1000px){
+    .contact {width: 80%; margin-left: 10%;}
+    section {padding-top: 10rem;}
+}
+
+@media screen and (max-width: 810px) {
+    header > img {display: none}
+    .menu {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .info {width: 100%; text-align: center;}
+    .double-presentation {align-items: center; justify-content: center;}
+    .photo {margin-left:0;}
+    .cont {width: 90px; height: 90px;}
+    
+}
+
+@media screen and (max-width:750px) {
+    .scolaire{width: 100%;}
+    .pro{width: 100%;}
+}
+
+@media screen and (max-width:600px) {
+    section {width: 90%; margin-left: 5%;}
+    .cont {width: 60px; height: 60px;}
+    .langages {text-align: center;}
+    .software {text-align: center; margin-left: 0;}
+    footer {font-size: 80%;}
+    
+}
