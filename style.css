@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -137,7 +138,7 @@ section {
     transition: 0.3s;
 }
 
-.intermediaire:hover {background-color: rgb(240, 211, 46);}
+.intermediaire:hover {background-color: rgb(240, 211, 46); color: rgb(114, 96, 79)}
 
 .debutant {
     margin-top: 20px;
@@ -150,7 +151,7 @@ section {
 
 .s {width:30%;}
 
-.debutant:hover {background-color: rgb(114, 240, 46);}
+.debutant:hover {background-color: rgb(114, 240, 46);color: #273727;}
 
 
 .software {
@@ -257,7 +258,7 @@ section {
 
 .un {background: url(images/site-papa.png); background-size: cover;}
 .deux {background: url(images/site-wassem.png); background-size: cover;}
-.trois {background: url(images/site-papa.png); background-size: cover;}
+.trois {background: url(images/projet_python.png); background-size: cover;}
 
 
 .contact {
@@ -305,12 +306,13 @@ section {
 
 @media screen and (max-width: 1350px) {
     section{width: 80%; margin-left:10%;}
-    .intermediaire {font-size: 0.9em;}
+    .intermediaire {font-size: 0.8em;}
 }
 
 @media screen and (max-width: 1000px){
     .contact {width: 80%; margin-left: 10%;}
     section {padding-top: 10rem;}
+    .intermediaire {font-size: 0.7em;}
 }
 
 @media screen and (max-width: 810px) {
@@ -323,6 +325,8 @@ section {
     .double-presentation {align-items: center; justify-content: center;}
     .photo {margin-left:0;}
     .cont {width: 90px; height: 90px;}
+    .debutant {font-size: 0.9em;}
+    .intermediaire {font-size: 0.6em;}
     
 }
 
